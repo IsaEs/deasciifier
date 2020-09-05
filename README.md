@@ -15,7 +15,8 @@ Commands could be accessed through the command bar (ctrl+p). Or via shortcuts.
 ## Installation
 
 You can install from vscode market place by searchinf deasciifier.
-    ![Marketplace](.asset/marketplace.png)
+
+![Marketplace](.asset/marketplace.png)
 
 ## Acknowledgements
 
