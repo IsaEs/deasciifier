@@ -1,0 +1,75 @@
+{
+    "name": "deasciifier",
+    "displayName": "Deasciifier",
+    "description": "Convert english letters in Turkish sentences",
+    "version": "0.0.1",
+    "publisher": "IsaEs",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IsaEs/deasciifier.git"
+    },
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "icon": ".asset/logo.png",
+    "activationEvents": [
+        "onCommand:extension.convertToTurkish",
+        "onCommand:extension.turkishToAscii"
+    ],
+    "main": "./build/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.convertToTurkish",
+                "title": "Convert Ascii to Turkish Characters"
+            },
+            {
+                "command": "extension.turkishToAscii",
+                "title": "Convert Turkish Characters to Ascii"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.convertToTurkish",
+                "key": "ctrl+alt+d",
+                "mac": "shift+cmd+d"
+            },
+            {
+                "command": "extension.turkishToAscii",
+                "key": "ctrl+alt+a",
+                "mac": "shift+cmd+a"
+            }
+        ]
+    },
+    "scripts": {
+        "package": "vsce package",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "bugs": {
+        "url": "https://github.com/IsaEs/deasciifier/issues"
+    },
+    "homepage": "https://github.com/IsaEs/deasciifier#readme",
+    "keywords": [
+        "deasciifier",
+        "turkish",
+        "ascii",
+        "turkishmode",
+        "asciifier",
+        "deasciify"
+    ],
+    "author": "IsaEs"
+}

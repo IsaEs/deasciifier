@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "build": false,
+        "gen_patterns": true
+    },
+    "search.exclude": {
+        "build": true,
+        "gen_patterns": true
+    }
+}
